@@ -1,0 +1,15 @@
+{
+  "name": "DevCon2018-Influencing-Tech-Culture",
+  "description": "How to impact company culture and ignite positive change one person at a time. Based on a true story.",
+  "author": "robertwhiting",
+  "registry": "npm",
+  "scripts": {
+    "start": "reveal-md -w --port 8888 slides.md",
+    "notes": "mv reveal-notes.json reveal.json && reveal-md --print dist/$npm_package_name-notes.pdf --theme white slides.md && mv reveal.json reveal-notes.json",
+    "pdf": "reveal-md --print dist/$npm_package_name.pdf slides.md",
+    "static": "reveal-md slides.md --static dist/"
+  },
+  "devDependencies": {
+    "reveal-md": "2.1.2"
+  }
+}
